@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon site</title>
+  <link href='https://fonts.googleapis.com/css2?family=Special+Elite&display=swap' rel='stylesheet'>
+  <style>
+    
+    /* définir la couleur de fond de la page */
+    body {
+      background: linear-gradient(#141e30, #243b55);
+      font-family: 'Special Elite', cursive;
+      overflow: hidden;
+      background-image: url(2.jpg); /* emplacement de l'image */
+    background-repeat: no-repeat; /* ne pas répéter l'image */
+    background-size: cover; /* adapter l'image à la taille de la page */
+    color: white;
+
+    }
+
+    h1 {
+      padding-left: 10%;
+    }
+    ::-webkit-scrollbar {
+    width: 10px; /* largeur de la barre de défilement */
+    background-color: #F5F5F5; /* couleur de fond */
+}
+
+/* style pour la zone de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #000000; /* couleur de la zone de défilement */
+    border-radius: 10px; /* arrondir les coins de la zone de défilement */
+}
+
+/* style pour la zone de défilement lorsqu'elle est survolée */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* couleur de la zone de défilement lorsqu'elle est survolée */
+}
+    p {
+      color: white;
+      padding-left: 10%;
+    }
+
+    /* définir une grille pour organiser les colonnes */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* les colonnes auront une taille égale */
+      grid-gap: 10px; /* ajouter un espace entre les colonnes */
+    }
+
+    /* définir un style pour l'image dans la première colonne */
+    .col-1 img {
+      width: 50%;
+      padding-left: 20%;
+      padding-top: 10%;
+    }
+
+    .images img {
+      width: 50%;
+    }
+
+    /* définir un style pour les images dans la troisième colonne */
+    .grid-container .images {
+      display: flex;
+      flex-direction: column; /* empiler les images les unes au dessus des autres */
+    }
+
+    /* définir un style pour les images dans la troisième colonne */
+    .grid-container .images img {
+      width: 100%;
+    }
+
+    .grid-container .col-1,
+.grid-container .col-2,
+.grid-container .col-3 {
+  height:700px; /* ou une autre hauteur maximale */
+    overflow-y:scroll;
+}
+
+.grid-container .col-1,
+.grid-container .col-2,
+.grid-container .col-3 {
+    border: 1px solid black;
+}
+    
+    /* pour le responsive on utilise media query */
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="col-1">
+      <img src="1.jpg" alt="image">
+      <p>La victime se nomme Jacque Parent, elle aurait apparament des pouvoir surnaturel, cependant, tout nous laisse à penser que cela serait des hallucinations. Dans toute ma carrière, je n'ai jamais enquêté dans une histoire comme celle ci. Aprés avoir récolté des indices et des témoignages, je vais vous livrer ici le résultat de ma longue enquête</p>
+      <p> Age : 40 ans </p>
+      <p>Description physique : Haut, Maigre, un peu voûté</p>
+      <p>Couleur yeux: Noir</p>
+      <p>Trait distinctif: Se cache toujours les mains</p>
+      <p>Lieu du décès : Maison de santé</p>
+      <p>Enquête : Jacques Parent avait-il des dons surnaturel ou alors est-il fou ? </p>
+    </div>
+    <div class="col-2">
+      <h1>Indice n°1 : Empreinte</h1>
+      <p>
+        Lors de cette enquête qui m’a été confié par Sherlock, j’ai récolté 3 indices. Le premier était les empreinte de monsieur Parent. Grâce à cet indice j’ai pu comparer empreinte de la victime est les objets que Jacques était censé touché.
+        Lorsque j’étais à la maison de santé, j’ai récolté le témoignage d’une infirmière qui m’assure avec vu monsieur Parent déplacé un verre sans le touché. J’ai donc comparé son empreinte à celui trouvé sur le verre. En effet, nous ne retrouvons aucun emprunte de monsieur Parent sur ce verre. Je me demande alors si cette dame a halluciné ou est-ce monsieur Parent qui possède des dons surnaturels.
+        </p>
+        <h1>Indice n°2 : Poils de chien</h1>
+      <p>
+        Le second indice sont des poils de chien que nous avons récolté chez une personne qui a été témoin des dons de M. Parent. Lorsque nous avons relevé les poils du chien, l’animal était extrêmement stressé, comme s’il avait vécu un choque post-traumatique. Nous avons envoyé les échantillons au laboratoire. Le résultat est surprenant, les poils possèdent un haut degré de radiation, inconnu jusqu’à lors sur notre planète. Le laboratoire travail toujours dessus pour comprendre comment cela peut être possible.
+        </p>
+        <h1>Indice n°3 : Témoignage de monsieur X</h1>
+        <p>
+          Le troisième indice est le témoignage d’un homme qui préfère rester anonyme. Nous allons l’appeler monsieur X. 
+Monsieur X a rencontré Jacques peu de temps avant sa mort. Dans son témoignage, il raconte que Jacques cachait toujours ses mains et lui a également confier qu’il avait des dons. Monsieur X nous a également rapporté que Jacques se sentait en danger et que sa mort ne serait pas un accident mais lié à ses pouvoirs surnaturels. Monsieur X à également reçu un message sous forme de morse lors de notre entretien qui est un code secret. Cela nous a renvoyer vers le dernier indice.
+
+          </p>
+          <h1>Indice n°4 : Vidéo surveillance</h1>
+        <p>
+          L’indice que nous avons reçu via morse est une vidéo surveillance qui date de 2012, ici nous voyons un phénomène inexplicable, une chose semble avoir déclenché les alarmes des voitures. Cette vidéo change complétement le cours de l’enquête. Nous sommes en train de prouver que des personnes aux dons extraordinaires existent parmi nous. Sont-ils dangereux ? Quelqu’un aurait tué monsieur Parent car il a révélé à des personnes ses dons ? Beaucoup de questions, mais peux de réponse pour l’instant. 
+
+          </p>
+<h2>Warning : Update !</h2>
+          <p>
+            Mon chef de service souhaite classer cette affaire sans suite faute de preuve, mais je sais que monsieur Parent disait vrai, nous avons les indices devant nous. Mais le service souhaite faire taire les rumeurs afin d’éviter à la population de paniqué ! Si vous avez accès à ce site, sachez que vous êtes une personne de confiance, contacter Sherlock et envoyer lui le lien. Je ne peux pas le faire car je suis maintenant sous surveillance depuis que j’ai découvert tout cela…
+          </p>
+    </div>
+    <div class="col-3">
+      <div class="images">
+        <video width="500" height="250" controls>
+          <source src="M.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+        <img src="3.jpg" alt="image1">
+    </br>
+        <img src="4.png" alt="image2">
+      </br>
+        <img src="5.jpg" alt="image3">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
